@@ -357,3 +357,42 @@ footer {
         font-size: 16px;
     }
 }
+
+section {
+    padding: 50px 0;
+}
+
+.about, .why-choose-us, .products, .testimonials, .contact-cta {
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    flex-basis: 45%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+    }
+
+    .product-item {
+        flex-basis: 100%;
+    }
+}
